@@ -1,0 +1,307 @@
+
+
+.HomeBox {
+  width: 100vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 6vw;
+}
+
+.HomeImg {
+  border-top: 0.5vw solid #0ef;
+  border-bottom: 0.5vw solid #dc0ae6;
+  border-left: 0.5vw solid #0ef;
+  border-right: 0.5vw solid #dc0ae6;
+  border-radius: 50%;
+  width: 24vw;
+  height: 24vw;
+  box-shadow: 1vw 1vw 3vw #dc0ae6, -1vw -1vw 3vw #0ef;
+  margin-left: -1.2vw;
+}
+
+.homeTitle {
+  font-size: 3.2vw;
+  margin-bottom: -1vw;
+}
+.homeTitle span {
+  font-size:    4.5vw;
+  color: #0ef;
+}
+.homeName {
+  color: #ff7200;
+  font-size: 2.7vw;
+  font-family: Arial;
+}
+
+.homeSkillMain {
+  height: 4.1vw;
+}
+.homeSkill {
+  position: absolute;
+  font-size: 2.7vw;
+}
+.homeskillauto {
+  color: #df0d06;
+}
+
+.homeDetail {
+  font-size: 1.3vw;
+    width: 43vw;
+}
+
+.homeIconBox {
+  color: #0ef;
+  display: flex;
+  justify-content: space-around;
+  width: 20vw;
+  height: 4vw;
+  margin: 0.9vw -0.9vw;
+}
+.homeIconBox div{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.homeIcon {
+  color: #0ef;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 3.3vw;
+    font-size: 2.5vw;
+    height: 3.3vw;
+    border: 0.1vw solid;
+    border-radius: 2vw;
+}
+.homeIcon:hover {
+  color: #ededed;
+}
+.btnBox {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: -0.5vw;
+}
+.btnItem {
+  margin: 0.2vw 0.35vw;
+  height: 2vw;
+  width: 9vw;
+  background: #0ef;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.5vw;
+  color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #081b29;
+}
+.btnItem:hover {
+  background-color: #ededed;
+}
+
+/* Projects section */
+#homeProjectsBox{
+  padding: 0px 8vw;
+}
+.homeProjects {
+  flex-direction: column;
+  max-width: 120vw;
+  margin: 0 auto;
+  padding: 10vw 0;
+}
+#homeProject-item1,
+#homeProject-item3,
+#homeProject-item5 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#homeProject-item2,
+#homeProject-item4 {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+}
+
+.section-title span {
+  color: #ff7200;
+}
+.section-title {
+  font-size: 3.5vw;
+  margin: -0.08vw 0vw;
+}
+.hr {
+  margin-bottom: 4vw;
+}
+
+.homeProject-info {
+  width: 45%;
+}
+.homeProject-img {
+  width: 49.55%;
+  height: 22.14vw;
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  /* z-index: 1; */
+}
+
+.homeProject-img img {
+  width: 100%;
+  height: 100%;
+  /* z-index: 2; */
+  opacity: 0.5;
+}
+.homeProject-info a {
+  margin: 0.2vw 0vw;
+  height: 1.5vw;
+  width: 4vw;
+  background: #0ef;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.1vw;
+  color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #081b29;
+}
+.homeProject-info a:hover {
+  background-color: #ededed;
+}
+
+.homeProject-info {
+  padding: 1.88vw;
+  height: 18.39vw;
+
+  background-image: linear-gradient(60deg, #29323c 0%, #485563 100%);
+  color: white;
+}
+
+.homeProject-info h1 {
+  color: #ff7200;
+  margin-bottom: -1.5vw;
+  font-size: 2.2vw;
+}
+.homeProject-info p {
+  font-size: 1.15vw;
+}
+.homeProject-info h2 {
+  color: #0ef;
+  font-size: 1.6vw;
+  margin-bottom: -1.2vw;
+}
+
+.homeProject-item:hover .homeProject-img img {
+  transform: scale(1.3);
+  /* overflow: hidden; */
+}
+.homeProject-item:hover .homeProject-img {
+  /* transform: scale(1.1); */
+  overflow: hidden;
+}
+
+/* Skill */
+
+@property --progress-value {
+  syntax: "<integer>";
+  initial-value: 0;
+  inherits: false;
+}
+
+@keyframes progress {
+  to {
+    --progress-value: 75;
+  }
+}
+
+.progress-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, white 79%, transparent 80% 100%),
+    conic-gradient(hotpink calc(var(--progress-value) * 1%), pink 0);
+  animation: progress 2s 1 forwards;
+}
+
+.progress-bar::before {
+  counter-reset: percentage var(--progress-value);
+  content: counter(percentage) "%";
+  animation: progress 2s 1 forwards;
+}
+/* End Skill */
+
+/* About me */
+.aboutBox {
+  margin-left: 4.5vw;
+  height: 25vw;
+}
+
+.aboutImg {
+  border-top: 0.5vw solid #0ef;
+  border-bottom: 0.5vw solid #dc0ae6;
+  border-left: 0.5vw solid #0ef;
+  border-right: 0.5vw solid #dc0ae6;
+  border-radius: 50%;
+  width: 20vw;
+  height: 20vw;
+  box-shadow: 1vw 1vw 3vw #dc0ae6, -1vw -1vw 3vw #0ef;
+}
+.homeAboutBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vw;
+  margin-bottom: 10vw;
+  height: 30vw;
+}
+
+.abouttext {
+  font-size: 4vw;
+  margin-top: -0.3vw;
+  margin-bottom: -0.1vw;
+}
+.abouttext span {
+  color: #ff7200;
+}
+.Haboutdetail {
+  font-size: 1.3vw;
+  width: 43vw;
+}
+.aboutskill {
+  /* margin-bottom: -0.5vw; */
+  font-size: 2.7vw;
+}
+.aboutskillauto {
+  color: #df0d06;
+}
+.aboutBox hr {
+  margin: 0vw;
+}
+.aboutBtn {
+  margin-top: 1.4vw;
+}
+.aboutBtn a {
+  margin: 0.35vw 0vw;
+  height: 2.1vw;
+  width: 12vw;
+  background: #0ef;
+  border: none;
+  border-radius: 0.5vw;
+  font-size: 1.6vw;
+  color: #ededed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  color: #081b29;
+}
+
+

@@ -1,0 +1,73 @@
+.TAboutBox {
+  margin-top: 4vw;
+  margin-bottom: 0vw;
+  padding: 0vw 10vw;
+}
+
+.aboutImgMrg {
+  margin-top: 4vw;
+}
+.TaboutBox {
+  margin-left: 4.5vw;
+  height: 24vw;
+}
+.aboutDetailEnd {
+  margin-top: 0.2vw;
+  padding: 0vw 10vw;
+}
+.aboutDetailEnd div span,
+.aboutdetail span {
+  visibility: hidden;
+}
+.aboutdetail,
+.aboutDetailEnd {
+  font-size: 1.2vw;
+}
+
+/* education */
+.education {
+  height: 48vw;
+  padding: 0vw 8vw;
+  margin-top: 5vw;
+}
+.educationHead {
+  font-size: 4vw;
+  margin: -0.25vw 0vw;
+}
+.educationHead span {
+  color: #ff7200;
+}
+.education1Head,
+.education2Head {
+  margin-bottom: -0.2vw;
+  font-size: 2.5vw;
+  color: #ff7200;
+}
+.education1Text,
+.education2Text1,
+.education2Text2 {
+  font-size: 1.6vw;
+  color: #0ef;
+  margin-bottom: -0.1vw;
+}
+.education2 {
+  margin-top: 1.5vw;
+}
+.education1Grade,
+.education1Clg,
+.education2Clg1,
+.education2Grade1,
+.education2Clg2,
+.education2Grade2 {
+  font-size: 1.3vw;
+}
+.education1Clg,
+.education2Clg1,
+.education2Clg2 {
+  display: flex;
+  justify-content: space-between;
+  width: 26vw;
+}
+.education2Text2 {
+  margin-top: 1vw;
+}

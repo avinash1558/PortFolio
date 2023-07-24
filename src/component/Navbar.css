@@ -1,0 +1,59 @@
+.NavBoxMain {
+  height: 3.5vw;
+  width: 100%;
+  position: sticky;
+  top: 0.25vw;
+  background-color: #051120;
+  z-index: 2;
+  box-shadow: -1vw -1vw 1vw #051120;
+}
+
+.NavBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.Navhead {
+  width: 25vw;
+
+  height: 3vw;
+  display: flex;
+  justify-content: space-between;
+
+  align-items: center;
+}
+.Navitems {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  height: 100%;
+  align-items: center;
+  margin: 0px;
+
+  width: 37vw;
+  font-size: 1.4vw;
+}
+.Navitem a {
+  display: flex;
+  justify-content: space-between;
+  color: #ededed;
+  align-items: center;
+  text-decoration: none;
+}
+
+.Navitem a:hover {
+  color: #081b29;
+  background-color: #0ef;
+  border-radius:2vw;
+  padding:0vw 0.6vw;
+
+}
+
+.Navheadtext {
+  color: #ff7200;
+  font-size: 2.3vw;
+  font-family: Arial;
+  float: left;
+}

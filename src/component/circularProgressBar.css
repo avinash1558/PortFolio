@@ -1,0 +1,75 @@
+.Barbox {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 36vw;
+}
+.fontSize {
+  color: #0ef;
+  font-size: 0.5vw;
+  margin: 0.6vw 0vw;
+}
+.fontSize div {
+  font-size: 1.6vw;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+  align-items: center;
+}
+.marginL {
+  margin-left: 0.3vw;
+}
+.homeSkillbox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 70%;
+  height: 35vw;
+  margin-left: -6vw;
+}
+.percentage {
+  height: 5vw;
+  width: 5vw;
+}
+
+.Fontsize {
+  font-size: 1.5vw;
+}
+.practicalSkill,
+.columnflex {
+  font-size: 1.7vw;
+  display: flex;
+  width: 15vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #0ef;
+}
+.box1,
+.box2 {
+  margin-bottom: 1.5vw;
+  display: flex;
+}
+progress {
+  background: black;
+  width: 30vw;
+  height: 0.3vw;
+}
+
+.Tech-Skill {
+  color: #ff7200;
+  font-size: 3.5vw;
+  margin-bottom: 1.5vw;
+}
+.Practical-Skill {
+  width: 28vw;
+  color: #ff7200;
+  font-size: 3.5vw;
+  margin-bottom: 1vw;
+}
+.Practical-Skill span {
+  color: #ededed;
+}
+.Tech-Skill span {
+  color: #ededed;
+}
